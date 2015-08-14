@@ -1,46 +1,76 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta charset="utf-8"
+  <meta http-equiv="x-UA-Compatible" content="IE=edge">
+  <meta name="viewport" contgent="width=device-width, initial-scale=1">
+  <title>Tony Portfolio</title>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
   </head>
   <body>
-    <div>
-      <div><img src="http://placehold.it/100x100"></div>
-      <div>
-        <h1>Jane Doette</h1>
-        <h3>Front-end Ninja</h3>
-      </div>
-    </div>
-    <div>
-      <img src="http://placehold.it/1140x350">
-    </div>
-    <div>
-      <h2>Featured Work</h2>
-    </div>
-    <div>
-      <div>
-        <img src="http://placehold.it/555x300">
-        <h3>Appify</h3>
-        <p><a href="http://github.com">Link to project</a></p>
-      </div>
-      <div>
-        <img src="http://placehold.it/555x300">
-        <h3>Appify</h3>
-        <p><a href="http://github.com">Link to project</a></p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <img src="http://placehold.it/555x300">
-        <h3>Appify</h3>
-        <p><a href="http://github.com">Link to project</a></p>
-      </div>
-      <div>
-        <img src="http://placehold.it/555x300">
-        <h3>Appify</h3>
-        <p><a href="http://github.com">Link to project</a></p>
-      </div>
-    </div>
 
+  <div class="container">
+    <div class="row"> 
+      <div class="col-md-6"><img class="title-logo" src="images/udacity-logo.jpg" alt="Tony Morrow logo"></div>
+      <div class="col-md-6 text-right text-uppercase">
+        <h1 class="title-super text-thin">Tony Morrow</h1>
+        <h3>Front-end Quester</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <img class="img-responsive" src="images/garden_horizontal.jpg">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-muted">Featured Work</h2>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <img class="img-responsive" src="images/compass_plant.jpg" alt="Compass plant" data-toggle="modal" data-target="#projectOne"> <!--555x300-->
+        <h3>Appify</h3>
+        <p><a href="http://github.com">Link to project</a></p>
+      </div>
+      <div class="col-md-4">
+        <img class="img-responsive" src="images/orchard_bee.jpg" alt="Orchard bee on blanket flower"/>
+        <h3>Appify</h3>
+        <p><a href="http://github.com">Link to project</a></p>
+      </div>
+      <div class="col-md-4">
+        <img class="img-responsive" src="images/helenium.jpg" alt="Helenium flower">
+        <h3>Appify</h3>
+        <p><a href="http://github.com">Link to project</a></p>
+      </div>
+    </div>
+   
+    <!-- Modal -->
+    <div class="modal fade" id="projectOne" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="images/compass_plant.jpg">
+            This was my first project in this class. I learned a lot about HTML and CSS.  I really need to work on responsive images, however!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

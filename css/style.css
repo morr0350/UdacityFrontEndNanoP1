@@ -1,0 +1,28 @@
+ @media (max-width: 400px) {
+  	.col-xs-6 {
+    	width: 100%;
+  	}
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	color: #747704;
+	font-weight: 400;
+}
+
+.text-muted {
+	color: #BCBBBB;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+
+.title-logo {
+	margin-top: 20px;
+}
+
+.title-super {
+	font-size: 60px;
+}
