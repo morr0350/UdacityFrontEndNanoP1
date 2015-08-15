@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta charset="utf-8"
+  <meta charset="utf-8">
   <meta http-equiv="x-UA-Compatible" content="IE=edge">
-  <meta name="viewport" contgent="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tony Portfolio</title>
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -39,31 +39,32 @@
     </div>
     <div class="row text-center">
       <div class="col-sm-4 col-xs-6">
-        <img class="img-responsive" src="images/compass_plant-1600_lg_2x.jpg" srcset="images/compass_plant-1600_lg_2x.jpg 1600w, images/compass_plant-1024_lg.jpg 1024w, images/compass_plant-640_md.jpg 640w, images/compass_plant-320_sm.jpg 320w" alt="Compass plant" data-toggle="modal" data-target="#projectOne" /> <!--555x300-->
-        <h3>Appify</h3>
+        <img class="img-responsive" sizes="(max-width: 480) calc(100vw - 10px), (max-width: 768) calc(50vw - 10px), 100vw" src="images/compass_plant-1600_lg_2x.jpg" srcset="images/compass_plant-1600_lg_2x.jpg 1600w, images/compass_plant-1024_lg.jpg 1024w, images/compass_plant-640_md.jpg 640w, images/compass_plant-320_sm.jpg 320w" alt="Compass plant" data-toggle="modal" data-target="#projectOne" /> <!--555x300-->
+        <h3>App 1</h3>
       </div>
       <div class="col-sm-4 col-xs-6">
-        <img class="img-responsive" src="images/orchard_bee-1600_lg_2x.jpg" srcset="images/orchard_bee-1600_lg_2x.jpg 1600w, images/orchard_bee-1024_lg.jpg 1024w, images/orchard_bee-640_md.jpg 640w, images/orchard_bee-320_sm.jpg 320w" alt="Orchard bee on blanket flower" data-toggle="modal" data-target="#projectTwo" />
-        <h3>Appify</h3>
+        <img class="img-responsive" sizes="(max-width: 480) calc(100vw - 10px), (max-width: 768) calc(50vw - 10px), 100vw" src="images/orchard_bee-1600_lg_2x.jpg" srcset="images/orchard_bee-1600_lg_2x.jpg 1600w, images/orchard_bee-1024_lg.jpg 1024w, images/orchard_bee-640_md.jpg 640w, images/orchard_bee-320_sm.jpg 320w" alt="Orchard bee on blanket flower" data-toggle="modal" data-target="#projectTwo" />
+        <h3>App 2</h3>
       </div>
       <div class="col-sm-4 col-xs-6">
-        <img class="img-responsive" src="images/helenium-1600_lg_2x.jpg" srcset="images/helenium-1600_lg_2x.jpg 1600w, images/helenium-1024_lg.jpg 1024w, images/helenium-640_md.jpg 640w, images/helenium-320_sm.jpg 320w" alt="Helenium flower" data-toggle="modal" data-target="#projectThree"/>
-        <h3>Appify</h3>
+        <img class="img-responsive" sizes="(max-width: 480) calc(100vw - 10px), (max-width: 768) calc(50vw - 10px), 100vw" src="images/helenium-1600_lg_2x.jpg" srcset="images/helenium-1600_lg_2x.jpg 1600w, images/helenium-1024_lg.jpg 1024w, images/helenium-640_md.jpg 640w, images/helenium-320_sm.jpg 320w" alt="Helenium flower" data-toggle="modal" data-target="#projectThree"/>
+        <h3>App 3</h3>
       </div>
       <div class="clearfix visible-xs-block"></div>
     </div>
    
     <!-- Modal -->
-    <div class="modal fade" id="projectOne" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="projectOne" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">App 1 Page</h4>
+            <h4 class="modal-title" id="myModalLabel1">App 1 Page</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="images/compass_plant-320_sm.jpg">
+            <img class="img-responsive" src="images/compass_plant-320_sm.jpg" alt="Compass plant">
             This was my first project in this class. I learned a lot about HTML and CSS.
-            <p><a href="http://github.com">Link to project</a></p>
+            This is a basic summary of the project.
+            <p><a href="http://github.com">Link to project repo</a></p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -71,16 +72,17 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="projectTwo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="projectTwo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">App 2 Page</h4>
+            <h4 class="modal-title" id="myModalLabel2">App 2 Page</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="images/orchard_bee-320_sm.jpg">
-            I really need to work on responsive layout and images, however!
-            <p><a href="http://github.com">Link to project</a></p>
+            <img class="img-responsive" src="images/orchard_bee-320_sm.jpg" alt="Orchard bee on blanket flower"> 
+            This was my second project in this class. I learned a lot about responsive layout.
+            This is a basic summary of the project.
+            <p><a href="http://github.com">Link to project repo</a></p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -88,16 +90,17 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="projectThree" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="projectThree" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">App 3 Page</h4>
+            <h4 class="modal-title" id="myModalLabel3">App 3 Page</h4>
           </div>
           <div class="modal-body">
-            <img class="img-responsive" src="images/helenium-320_sm.jpg">
-            I am enjoying getting better everyday with this nanodegree!
-            <p><a href="http://github.com">Link to project</a></p>
+            <img class="img-responsive" src="images/helenium-320_sm.jpg" alt="Helenium flower">
+            This was my first project in this class. I learned a lot about responsive images.
+            This is a basic summary of the project.
+            <p><a href="http://github.com">Link to project repo</a></p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -113,5 +116,6 @@
     <footer>
     &copy;2015 Tony Morrow
     </footer>
+    </div>
   </body>
 </html>
