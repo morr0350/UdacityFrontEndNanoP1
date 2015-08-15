@@ -1,11 +1,11 @@
- @media (max-width: 400px) {
+@media (max-width: 400px) {
   	.col-xs-6 {
     	width: 100%;
   	}
 }
 
 body {
-	font-family: 'Raleway', sans-serif;
+	font-family: "Raleway", sans-serif;
 	color: #747704;
 	font-weight: 400;
 }
@@ -17,7 +17,6 @@ body {
 .text-thin {
 	font-weight: 100;
 }
-
 
 .title-logo {
 	margin-top: 20px;
