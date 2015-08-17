@@ -12,47 +12,47 @@ module.exports = function(grunt) {
     responsive_images: {
       dev: {
         options: {
-          engine: 'im',
+          engine: "im",
           sizes: [{
             width: 1600,
             suffix: "_lg_2x",
             quality: 30
-            
-          },{
-            width: 1024,
-            suffix: "_lg",
-            quality: 60
-            
           },{
             width: 640,
+            height: 640,
+            aspectRatio: false,
+            gravity: "Center",
             suffix: "_md",
-            quality: 75
-            
+            quality: 60
           },{
             width: 320,
             suffix: "_sm",
             quality: 75
-            
+          },{
+            width: 320,
+            height: 320,
+            aspectRatio: false,
+            gravity: "Center",
+            suffix: "_xs",
+            quality: 75
           }]
         },
-
         /*
         You don't need to change this part if you don't change
         the directory structure.
         */
         files: [{
           expand: true,
-          src: ['*.{gif,jpg,png}'],
-          cwd: 'images_src/',
-          dest: 'images/'
+          src: ["*.{gif,jpg,png}"],
+          cwd: "images_src/",
+          dest: "images/"
         }]
       }
     },
-
     /* Clear out the images directory if it exists */
     clean: {
       dev: {
-        src: ['images'],
+        src: ["images"],
       },
     },
 
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
     mkdir: {
       dev: {
         options: {
-          create: ['images']
+          create: ["images"]
         },
       },
     },
@@ -70,17 +70,18 @@ module.exports = function(grunt) {
       dev: {
         files: [{
           expand: true,
-          src: 'images_src/fixed/*.{gif,jpg,png}',
-          dest: 'images/'
+          src: "images_src/fixed/*.{gif,jpg,png}",
+          dest: "images/"
         }]
       },
     },
   });
-  
-  grunt.loadNpmTasks('grunt-responsive-images');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-mkdir');
-  grunt.registerTask('default', ['clean', 'mkdir', 'copy', 'responsive_images']);
+
+
+  grunt.loadNpmTasks("grunt-responsive-images");
+  grunt.loadNpmTasks("grunt-contrib-clean");
+  grunt.loadNpmTasks("grunt-contrib-copy");
+  grunt.loadNpmTasks("grunt-mkdir");
+  grunt.registerTask("default", ["clean", "mkdir", "copy", "responsive_images"]);
 
 };
